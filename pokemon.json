@@ -6,7 +6,7 @@
       "name":"Bulbasaur",
       "__v":3,
       "old_image_url":"http://pokeapi.co/media/img/1.png",
-      "description":"Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+      "description":"Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
       "image_url":"http://assets22.pokemon.com/assets/cms2/img/pokedex/full/001.png",
       "types":[  
          "poison",
@@ -28,7 +28,7 @@
       "name":"Ivysaur",
       "__v":4,
       "old_image_url":"http://pokeapi.co/media/img/2.png",
-      "description":"There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.  There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+      "description":"There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
       "image_url":"http://assets22.pokemon.com/assets/cms2/img/pokedex/full/002.png",
       "types":[  
          "poison",
@@ -58,7 +58,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Venusaur-mega",
             "_id":"557a723880a20c9db3bc31cd"
          }
@@ -121,12 +121,12 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Charizard-mega-y",
             "_id":"557a723880a20c9db3bc31d3"
          },
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Charizard-mega-x",
             "_id":"557a723880a20c9db3bc31d2"
          }
@@ -188,7 +188,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Blastoise-mega",
             "_id":"557a723980a20c9db3bc31dc"
          }
@@ -824,7 +824,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"hapiness",
             "to":"Crobat",
             "_id":"557a72ae7276d341b41ede29"
          }
@@ -1275,7 +1275,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Alakazam-mega",
             "_id":"557a72d07276d341b41ee1df"
          }
@@ -1615,7 +1615,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Magnezone",
             "_id":"557a72b27276d341b41ede88"
          }
@@ -1847,7 +1847,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Gengar-mega",
             "_id":"557a72b47276d341b41edecb"
          }
@@ -2246,7 +2246,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Kangaskhan-mega",
             "_id":"557a72b77276d341b41edf29"
          }
@@ -2476,7 +2476,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Pinsir-mega",
             "_id":"557a72b87276d341b41edf36"
          }
@@ -2534,7 +2534,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Gyarados-mega",
             "_id":"557a72b57276d341b41edef3"
          }
@@ -2587,42 +2587,42 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"happiness (night)",
             "to":"Umbreon",
             "_id":"557a72bb7276d341b41edf96"
          },
          {  
-            "method":"other",
+            "method":"friendship",
             "to":"Sylveon",
             "_id":"557a72bb7276d341b41edf95"
          },
          {  
-            "method":"other",
+            "method":"grass stone",
             "to":"Leafeon",
             "_id":"557a72bb7276d341b41edf94"
          },
          {  
-            "method":"other",
+            "method":"ice stone",
             "to":"Glaceon",
             "_id":"557a72bb7276d341b41edf93"
          },
          {  
-            "method":"stone",
+            "method":"water stone",
             "to":"Vaporeon",
             "_id":"557a72bb7276d341b41edf92"
          },
          {  
-            "method":"stone",
+            "method":"thunder stone",
             "to":"Jolteon",
             "_id":"557a72bb7276d341b41edf91"
          },
          {  
-            "method":"stone",
+            "method":"fire stone",
             "to":"Flareon",
             "_id":"557a72bb7276d341b41edf90"
          },
          {  
-            "method":"other",
+            "method":"happiness (day)",
             "to":"Espeon",
             "_id":"557a72bb7276d341b41edf8f"
          }
@@ -2789,7 +2789,7 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Aerodactyl-mega",
             "_id":"557a72b97276d341b41edf54"
          }
@@ -2935,12 +2935,12 @@
       ],
       "evolutions":[  
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Mewtwo-mega-x",
             "_id":"557a72b97276d341b41edf5e"
          },
          {  
-            "method":"other",
+            "method":"mega gemme",
             "to":"Mewtwo-mega-y",
             "_id":"557a72b97276d341b41edf5d"
          }
