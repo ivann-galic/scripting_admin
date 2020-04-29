@@ -40,7 +40,7 @@ def next_evo(dictionary, pokemon_name):
                             next_evo(dictionary, pokemons_next_evo)
 
                         elif len(pokemon['evolutions']) > 1:
-                            print("This pokemon can evolve to", len(pokemon['evolutions']), "different pokemon:")
+                            print(pokemon_name,"can evolve to", len(pokemon['evolutions']), "different pokemon:")
                             i = 0
                             while i < len(pokemon['evolutions']):
                                 print("Evolves by", pokemon['evolutions'][i]['method'].replace("_", " "), "to",
