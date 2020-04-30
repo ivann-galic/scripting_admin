@@ -2,9 +2,11 @@ import json
 import sys
 import textwrap
 import argparse
-import urllib
 from urllib.request import urlopen
 from PIL import Image
+import datetime
+import platform
+import getpass
 
 
 def json_init():
@@ -210,6 +212,43 @@ def picture_option(pokemon_name):
     print("")
 
 
+def team_option(team):
+    dictionary = json_init()
+    user_name = getpass.getuser()
+    current_date = str(datetime.date.today())
+    i = 1
+    found = False
+    while i < 7:
+        found = False
+        for pokemon in dictionary:
+            if pokemon['name'] == team[i].title():
+                found = True
+        if not found:
+            print(team[i].title(),
+                  "can't be added to your team cause he doesn't exist.\n Please check on the list (with -l , "
+                  "--list) the pokemon that can be added to the team.")
+            break
+        i += 1
+    i = 1
+    if found:
+        f = open(team[0] + ".txt", "a")
+        f.write(str("Team created by " + user_name + " on " + current_date + ":") + "\n__________________\n")
+        while i < 7:
+            for pokemon in dictionary:
+                if pokemon['name'] == team[i].title():
+                    id_pkm = str(pokemon['pkdx_id'])
+                    f.write("id: " + id_pkm + '\n')
+                    f.write(str("name: " + pokemon['name']) + '\n')
+                    if len(pokemon['types']) == 1:
+                        f.write(str("type: " + pokemon['types'][0]) + '\n')
+                    elif len(pokemon['types']) == 2:
+                        f.write(str("types: " + pokemon['types'][0] + "/" + pokemon['types'][1]) + '\n')
+                    f.write(str("__________________") + '\n')
+
+            i += 1
+        print("Your team had been successfully created on", team[0] + ".txt")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="pokedex.py is a script wich allows you to get informations about pokemon and even build your "
@@ -225,6 +264,8 @@ def main():
                        help="to access the resistances of an individual pokemon. Needs to be followed by a pokemon name.")
     group.add_argument("-p", "--picture",
                        help="to display the picture of an individual pokemon in browser. Needs to be followed by a pokemon name.")
+    group.add_argument("-t", "--team", nargs='+', help="Write a team of 6 pokemon on a file.txt. Required arguments: "
+                                                       "filename / pkm1 / pkm2 / pkm3 / pkm4 / pkm5 / pkm6 /")
 
     arguments = parser.parse_args()
 
@@ -238,6 +279,8 @@ def main():
         resistance_option(arguments.resistance.title())
     elif arguments.picture is not None:
         picture_option(arguments.picture.title())
+    elif arguments.team is not None:
+        team_option(arguments.team)
 
 
 if __name__ == '__main__':
